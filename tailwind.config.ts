@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our boutique theme
+				pink: {
+					light: '#FFC0CB',
+					DEFAULT: '#FF9EB5',
+					dark: '#FF6E9C'
+				},
+				lavender: {
+					light: '#E6E6FA',
+					DEFAULT: '#D8BFD8',
+					dark: '#9370DB'
+				},
+				mint: {
+					light: '#C1F4C5',
+					DEFAULT: '#98FB98',
+					dark: '#7CCD7C'
+				},
+				lemon: {
+					light: '#FFFACD',
+					DEFAULT: '#FFF8DC',
+					dark: '#FFE4B5'
 				}
 			},
 			borderRadius: {
@@ -84,11 +106,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'pulsate': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulsate': 'pulsate 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				'heading': ['Nunito', 'sans-serif'],
+				'body': ['Open Sans', 'sans-serif']
 			}
 		}
 	},
